@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         prefsCity = sharedPreference.getCityPrefs(context);
 
 
-        // ustawiamy wybrane parametry adaptera
+        // set adapter
         retrofit = new RestAdapter.Builder()
                 // adres API
                 .setEndpoint("http://api.openweathermap.org")
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                 .setLogLevel(RestAdapter.LogLevel.FULL)
                 .build();
 
-        // tworzymy klienta
+        // create client
         myWebService = retrofit.create(MyWebService.class);
 
 

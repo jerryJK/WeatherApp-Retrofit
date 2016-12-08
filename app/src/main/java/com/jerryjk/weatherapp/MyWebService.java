@@ -16,7 +16,7 @@ import retrofit.http.Query;
 
 
 
-        @GET("/data/2.5/forecast/daily") // deklarujemy endpoint oraz metodę
+        @GET("/data/2.5/forecast/daily") // set endpoint and void getData
         void getData(@Query("q") String q,
                      @Query("mode") String mode,
                      @Query("units") String units,
@@ -27,7 +27,9 @@ import retrofit.http.Query;
 
 
 
-      // @POST("/wsexample/") // deklarujemy endpoint, metodę oraz dane do wysłania
+      // @POST("/wsexample/")
       //  void postData(@Body Weather pBody, Callback<Weather> pResponse);
+
+
     }
 
